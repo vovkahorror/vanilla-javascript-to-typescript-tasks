@@ -2,8 +2,12 @@ type StreetType = {
   title: string;
 }
 
-type AddressType = {
+type AddressHouseType = {
   number: number;
+  street: StreetType;
+}
+
+type AddressGovernmentType = {
   street: StreetType;
 }
 
@@ -11,13 +15,13 @@ type GovernmentBuildingsType = {
   type: 'Hospital' | 'Fire-Station';
   budget: number;
   staffCount: number;
-  address: AddressType;
+  address: AddressGovernmentType;
 }
 
 type HouseType = {
   buildedAt: number;
   repaired: boolean;
-  address: AddressType;
+  address: AddressHouseType;
 }
 
 export type CityType = {
