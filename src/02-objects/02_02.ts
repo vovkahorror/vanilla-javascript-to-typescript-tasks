@@ -11,14 +11,14 @@ type AddressGovernmentType = {
   street: StreetType;
 }
 
-type GovernmentBuildingsType = {
+export type GovernmentBuildingsType = {
   type: 'Hospital' | 'Fire-Station';
   budget: number;
   staffCount: number;
   address: AddressGovernmentType;
 }
 
-type HouseType = {
+export type HouseType = {
   buildedAt: number;
   repaired: boolean;
   address: AddressHouseType;
