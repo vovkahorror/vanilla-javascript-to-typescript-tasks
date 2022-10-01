@@ -1,3 +1,5 @@
+export {};
+
 test('should take only adults', () => {
   const ages = [14, 16, 20, 25, 39, 68, 70, 15, 18];
 
