@@ -1,3 +1,5 @@
+export {};
+
 function increaseAge(u: UserType) {
     u.age++;
 }
